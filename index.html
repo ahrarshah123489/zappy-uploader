@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Zappy File Uploader</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    input, button {
+      padding: 10px;
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Upload Your HTML File</h1>
+  <form action="/upload" method="POST" enctype="multipart/form-data">
+    <input type="file" name="htmlfile" accept=".html" required />
+    <br />
+    <button type="submit">Upload & Host</button>
+  </form>
+</body>
+</html>
